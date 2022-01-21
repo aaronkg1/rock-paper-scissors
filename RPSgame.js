@@ -1,7 +1,6 @@
-var choice = ['Rock', 'Paper', 'Scissors'];
+const choice = ['Rock', 'Paper', 'Scissors'];
 let userChoice;
 let computerChoice;
-var userWins;
 let userScore = 0;
 let computerScore = 0;
 
