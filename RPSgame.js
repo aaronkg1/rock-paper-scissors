@@ -3,12 +3,18 @@ let userChoice;
 let computerChoice;
 let userScore = 0;
 let computerScore = 0;
+const games = {
+    computer: 0,
+    user: 0
+};
+
 
 console.log("ROCK PAPER SCISSORS\n---------------------------------------------\nFIRST TO 5 WINS! to begin game type game();\n---------------------------------------------")
 
 function game() {
 
     userPlay();
+    
     if (userChoice == choice[0] || userChoice == choice[1] || userChoice == choice[2])
     {
         
@@ -23,17 +29,19 @@ function game() {
     if (checkScore()) {
         if (userScore >= 5) {
             console.log("\n \n \nCongratulations! You beat the computer :)\n \n \n---------------------------------------------\nTo play again type game();");
-            
+            games.user += 1;
             userScore = 0;
             computerScore = 0;
+            console.log(`Overall scores\n--------------------------------------------- \nUser: ${games.user}  Computer: ${games.computer}`);
             return;
         }
 
         else if (computerScore >= 5) {
             console.log("\n \n \nThe computer won...Game over :(\n \n \n---------------------------------------------\nWant to try again? Just type game();");
-            
+            games.computer += 1;
             userScore = 0;
             computerScore = 0;
+            console.log(`Overall scores\n--------------------------------------------- \nUser: ${games.user}  Computer: ${games.computer}`);
             return;
         }
 
