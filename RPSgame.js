@@ -102,15 +102,15 @@ function game() {
     userMessage.textContent = `You picked: ${userChoice}`;
    computerMessage.textContent = `Computer picked: ${computerChoice}`;
    checkResults();
-   displayUserScore.textContent = `User Score: ${userScore}`;
-   displayCompScore.textContent = `Computer Score: ${computerScore}`;}, 3400);
+   displayUserScore.textContent = `User Score : ${userScore}`;
+   displayCompScore.textContent = `Computer Score : ${computerScore}`;}, 3400);
     
     
     
-    
-
-    if (checkScore()) {
+    setTimeout(() => { if (checkScore()) {
         if (userScore >= 5) {
+            userMessage.textContent = 'You beat the computer!';
+            computerMessage.textContent = 'Computer: grrrr'
             games.user += 1;
             userScore = 0;
             computerScore = 0;
@@ -119,6 +119,9 @@ function game() {
         }
 
         else if (computerScore >= 5) {
+            computerMessage.textContent = 'You were outsmarted by a random number generator...';
+            userMessage.textContent = 'Computer wins';
+            compImage.setAttribute('src','images/happypc.png');
             games.computer += 1;
             userScore = 0;
             computerScore = 0;
@@ -126,7 +129,9 @@ function game() {
             return;
         }
 
-    }
+    }}, 3400);
+
+   
 
 
   
