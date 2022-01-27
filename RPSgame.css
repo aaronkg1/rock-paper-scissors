@@ -1,0 +1,112 @@
+body {
+    background-color: rgba(204, 211, 203, 0.358);
+}
+
+#title {
+margin: auto;
+width: 50%;
+color: #333333;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 50px;
+text-align: center;
+}
+.container { 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   column-gap: 100px;
+   padding-top: 100px;
+   
+   
+}
+
+.container-top { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 50px;
+    
+ }
+
+
+.scores {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+}
+.button-37 {
+style: none;
+  border: none;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: '#fff';
+  cursor: pointer;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  mix-blend-mode: multiply;
+  flex: 0 0 1;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+    
+  }
+}
+
+#rock {
+    background-image: url(
+'Images/rock.png');
+background-size: cover;
+width: 200px;
+height: 200px;
+padding: auto;
+font-size: 2rem;
+background-position: center;
+align-self: baseline;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+#paper {
+    background-image: url(
+        'Images/paper.png');
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        font-size: 2rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+#scissors {
+background-image: url(
+'Images/scissors.png');
+background-size: cover;
+width: 200px;
+height: 200px;
+font-size: 2rem;
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+}

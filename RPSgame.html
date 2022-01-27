@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="RPSgame.js"></script>
+    <link rel="stylesheet" href="RPSgame.css">
+    <script src="RPSgame.js" defer></script>
+    
 </head>
 <body>
-    <h1>ROCK PAPER SCISSORS CONSOLE GAME</h1>
-    <p>To play please type game(); into the console.</p>
+    <div class="container-top">
+        <p id="user">User Score: 0</p>
+    <h1 id="title">ROCK PAPER SCISSORS</h1>
+        <p id="computer">Computer Score: 0</p>
+    </div>
+    <div class="container">
+        <button class="button-37" id="rock" role ="button" value="ROCK"></button>
+    </div>
     
+    <div class="container">
+        <button class="button-37" id="paper" role ="button" value="PAPER"></button>
+        <button class="button-37" id="scissors" role ="button" value="SCISSORS"></button>
+    </div>
+    
+    <div class="scores">
+    </div>
 </body>
 </html>
