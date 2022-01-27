@@ -72,15 +72,15 @@ function game() {
     setTimeout(() => {
         userMessage.textContent = '';
         computerMessage.textContent =`Rock`;}, 200);
-    setTimeout(() => {compImage.setAttribute('src',`Images/Rock.png`);}, 200);
+    setTimeout(() => {compImage.setAttribute('src',`images/Rock.png`);}, 200);
     setTimeout(() => {compImage.setAttribute('src',``);}, 600);
     setTimeout(() => {computerMessage.textContent =`. . .`;}, 600);
     setTimeout(() => {computerMessage.textContent =`Paper`;}, 1000);
-    setTimeout(() => {compImage.setAttribute('src',`Images/Paper.png`);}, 1000);
+    setTimeout(() => {compImage.setAttribute('src',`images/Paper.png`);}, 1000);
     setTimeout(() => {computerMessage.textContent =`. . .`;}, 1400);
     setTimeout(() => {compImage.setAttribute('src',``);}, 1400);
     setTimeout(() => {computerMessage.textContent =`Scissors!`;}, 1800);
-    setTimeout(() => {compImage.setAttribute('src',`Images/Scissors.png`);}, 1800);
+    setTimeout(() => {compImage.setAttribute('src',`images/Scissors.png`);}, 1800);
     setTimeout(() => {computerMessage.textContent =`. . .`;}, 2200);
     setTimeout(() => {compImage.setAttribute('src',``);}, 2200);
     setTimeout(() => {compImage.setAttribute('src',``);}, 2400);
@@ -97,8 +97,8 @@ function game() {
  
    setTimeout(() => {
     computerPlay();
-    compImage.setAttribute('src',`Images/${computerChoice}.png`);
-    compImage.setAttribute('src',`Images/${computerChoice}.png`);
+    compImage.setAttribute('src',`images/${computerChoice}.png`);
+    compImage.setAttribute('src',`images/${computerChoice}.png`);
     userMessage.textContent = `You picked: ${userChoice}`;
    computerMessage.textContent = `Computer picked: ${computerChoice}`;
    checkResults();

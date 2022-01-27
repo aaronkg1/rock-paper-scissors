@@ -167,7 +167,7 @@ background-repeat: no-repeat;
 
 #paper {
     background-image: url(
-        'Images/Paper.png');
+        'images/Paper.png');
         background-size: cover;
         width: 200px;
         height: 200px;
@@ -179,7 +179,7 @@ background-repeat: no-repeat;
 
 #scissors {
 background-image: url(
-'Images/Scissors.png');
+'images/Scissors.png');
 background-size: cover;
 width: 200px;
 height: 200px;
